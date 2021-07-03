@@ -290,6 +290,10 @@ def main():
 
         movingsprites.draw(screen)
         current_room.wall_list.draw(screen)
+        font = pg.font.Font('freesansbold.ttf', 15)
+        outputString = "LAME"
+        text = font.render(outputString, True, YELLOW)
+        screen.blit(text, [35, 583])
 
         pg.display.flip()
 
