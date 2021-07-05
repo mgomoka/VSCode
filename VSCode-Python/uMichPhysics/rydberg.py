@@ -8,7 +8,7 @@ for m in range(1, 4):
 '''
 
 
-
+x = 0
 howmanyMdoyouwant = 12
 
 R = 1.097e-2
