@@ -10,3 +10,4 @@ Scikit-learn
 Pandas
 Tensorflow
 Torch
+Seaborn
