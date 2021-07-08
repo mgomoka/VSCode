@@ -7,3 +7,4 @@ Pygame
 Pyglet
 Vpython
 Scikit-learn
+Pandas
