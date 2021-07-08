@@ -49,6 +49,7 @@ print("M", m[2][0], " = ", m[2][1], m[2][2], m[2][3], m[2][4], m[2][5])
 
 
 import pygame as pg
+import sys
 
 pg.init()
 pg.display.set_caption("Rydberg")
@@ -62,6 +63,7 @@ while True:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             pg.quit()
+            sys.exit()
 
     screen.fill((255, 255, 255))
 

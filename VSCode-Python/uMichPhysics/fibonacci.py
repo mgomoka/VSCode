@@ -1,5 +1,6 @@
 import pygame as pg
 from pymunk import space
+import sys
 
 fibonacci = []
 x1, x2 = 0, 1
@@ -22,6 +23,7 @@ while True:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             pg.quit()
+            sys.exit()
 
     screen.fill((255, 255, 255))
 
