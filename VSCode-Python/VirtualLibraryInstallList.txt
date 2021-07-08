@@ -5,3 +5,5 @@ Pymunk
 Sympy
 Pygame
 Pyglet
+Vpython
+Scikit-learn

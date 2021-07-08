@@ -22,7 +22,7 @@ while yayNay == 'y':
             yayNay = 'y'
             break
 
-userInputs.sort()
+userInputs.sort(reverse = True)
 # userInputs.reverse()
 
 print()
