@@ -8,3 +8,5 @@ Pyglet
 Vpython
 Scikit-learn
 Pandas
+Tensorflow
+Torch
