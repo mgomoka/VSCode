@@ -21,5 +21,6 @@ pg.display.set_caption('PyGamePyMunkTest1')
 size = (850, 850)
 screen = pg.display.set_mode(size)
 clock = pg.time.Clock()
-font = pg.font.Font('freesansbold.ttf', 15) # pg.font.SysFont('avenir', 15)
+font = pg.font.Font('freesansbold.ttf', 15)
+sysfont = pg.font.SysFont('avenir', 15)
 
