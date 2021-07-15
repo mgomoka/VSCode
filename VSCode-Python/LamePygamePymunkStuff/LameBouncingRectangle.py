@@ -68,7 +68,7 @@ while not done:
     # Limit Frames Per Second
     clock.tick(120)
 
-    # Go Ahead And Ppdate The Screen With What We've Drawn
+    # Go Ahead And Update The Screen With What We've Drawn
     pg.display.flip()
 
 # Close Everything Down

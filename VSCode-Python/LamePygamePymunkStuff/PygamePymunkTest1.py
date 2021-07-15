@@ -24,3 +24,14 @@ clock = pg.time.Clock()
 font = pg.font.Font('freesansbold.ttf', 15)
 sysfont = pg.font.SysFont('avenir', 15)
 
+while True:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            pg.quit()
+            sys.exit()
+    screen.fill(WHITE)
+
+    
+
+    pg.display.update()
+    clock.tick(60)
