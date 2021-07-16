@@ -20,6 +20,8 @@ gGameNameColor = 'LEMONADE'
 gGameNameYOffset = 0
 gBorderThickness = 1
 
+gameLEVEL = 0
+
 while True:
     for event in pg.event.get():
         if event.type == pg.QUIT:
@@ -30,6 +32,10 @@ while True:
     myDisplay.screenFillGameNameRPG(gGameName, gVersionName, gGameNameColor, gGameNameYOffset, gLameXOffset, gLameYOffset)
     myDisplay.drawGameBorder(gBorderThickness)
     myGame.makeStaticBorder(gBorderThickness)
+    if gameLEVEL == 0:
+        myGame.drawGameScreen(mysize, myDisplay, 'BEIGE')
+        myGame.blitSkyImage(mysize, myDisplay)
+        myGame.drawLoadScreen(mysize, myDisplay)
     
     mysize = (pg.display.get_surface().get_width(), pg.display.get_surface().get_height())
     myDisplay.setScreenSize(mysize)
