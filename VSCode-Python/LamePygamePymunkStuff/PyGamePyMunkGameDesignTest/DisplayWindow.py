@@ -11,8 +11,8 @@ class DISPLAY():
         self.font.setFontSF('herculanum', 20)
     def screenFill(self, color):
         self.screen.fill(self.color.COLORLIST[color])
-    def setScreenSize(self, width, height):
-        self.size = (width, height)
+    def setScreenSize(self, size):
+        self.size = size
     def screenFillLame(self, xOff, yOff):
         GameNameDisplayTextL = 'L'
         textXOffset = xOff
