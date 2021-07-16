@@ -10,7 +10,8 @@ class COLOR:
             "BLUE": (30, 144, 255),
             "YELLOW": (255, 255, 0),
             "ORANGE": (255, 165, 0),
-            "TANGERINE": (255, 132, 0)
+            "TANGERINE": (255, 132, 0),
+            "LEMONADE": (253, 185, 200)
         }
     def printCOLORLIST(self):
         print(self.COLORLIST)
