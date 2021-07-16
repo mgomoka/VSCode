@@ -27,7 +27,7 @@ while True:
             sys.exit()
     myDisplay.screenFill(gScreenColor)
     myDisplay.screenFillLame(gLameXOffset, gLameYOffset)
-    myDisplay.screenFillGameNameRPG(gGameName, gVersionName, gGameNameColor, gGameNameYOffset)
+    myDisplay.screenFillGameNameRPG(gGameName, gVersionName, gGameNameColor, gGameNameYOffset, gLameXOffset, gLameYOffset)
     myDisplay.drawGameBorder(gBorderThickness)
     myGame.makeStaticBorder(gBorderThickness)
     

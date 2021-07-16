@@ -41,7 +41,7 @@ class DISPLAY():
         renderString = blitFont.font.render(storedString,True, self.color.COLORLIST['BLACK'])
         renderedWidth = renderString.get_width()
         return renderedWidth
-    def screenFillGameNameRPG(self, gamename, versionID, gamecolor, yOffset):
+    def screenFillGameNameRPG(self, gamename, versionID, gamecolor, yOffset, lameXoff, lameYOff):
         gamenameWidth = self.getTextWidth(gamename, 'herculanum', 30)
         rWidth = self.getTextWidth('R', 'herculanum', 30)
         pWidth = self.getTextWidth('P', 'herculanum', 30)
@@ -51,6 +51,6 @@ class DISPLAY():
         self.blitText('R', 'herculanum', 30, 'RED', [(self.size[0]/2)-((gamenameWidth+5+rWidth+1+pWidth+1+gWidth+1)/2)+(gamenameWidth+5), 5+yOffset])
         self.blitText('P', 'herculanum', 30, 'YELLOW', [(self.size[0]/2)-((gamenameWidth+5+rWidth+1+pWidth+1+gWidth+1)/2)+(gamenameWidth+5+rWidth+1), 5+yOffset])
         self.blitText('G', 'herculanum', 30, 'BLUE', [(self.size[0]/2)-((gamenameWidth+5+rWidth+1+pWidth+1+gWidth+1)/2)+(gamenameWidth+5+rWidth+1+pWidth), 5+yOffset])
-        self.blitText('Version ' + versionID, 'herculanum', 20, 'WHITE', [(self.size[0])-5-versionWidth, 9])
+        self.blitText('Version ' + versionID, 'herculanum', 20, 'WHITE', [(self.size[0])-versionWidth-10-lameXoff, 7+lameYOff])
     def drawGameBorder(self, thickness):
         pg.draw.rect(self.screen, self.color.COLORLIST['WHITE'], [0, 40, self.size[0], thickness])
