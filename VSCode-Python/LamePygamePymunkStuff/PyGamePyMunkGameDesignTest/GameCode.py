@@ -3,7 +3,7 @@ import pymunk as pm
 import DisplayWindow as DW
 import os
 
-class GAMECODE():
+class GAMECODE:
     def __init__(self, sidegravity, downgravity, size):
         self.size = size
         self.space = pm.Space()

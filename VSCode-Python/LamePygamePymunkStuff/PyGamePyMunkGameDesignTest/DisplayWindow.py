@@ -1,7 +1,7 @@
 import pygame as pg
 import ColorsFonts as CF
 
-class DISPLAY():
+class DISPLAY:
     def __init__(self, size):
         self.size = size
         self.screen = pg.display.set_mode(self.size, pg.RESIZABLE)
