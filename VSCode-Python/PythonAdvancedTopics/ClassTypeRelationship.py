@@ -45,23 +45,25 @@ print(zeb.get_dogage())
 print(ember.get_dogname())
 print(ember.get_dogage())
 
-"""
 # Create 'Pet' Class That 'Cat' And 'Cow' Inherit From
 def pet_init(self, name, age):
     self.name = name
     self.age = age
-    self.type
-pet_class = type("pet_class", (), {"__init__": pet_init})
+    self.type = ""
+def print_name(self):
+    print(self.name)
+def print_type(self):
+    print(self.type)
+pet_class = type("pet_class", (), {"__init__": pet_init, "print_name": print_name, "print_type": print_type})
+new_pet = pet_class("Petone", 18)
+
 def cat_init(self, name, age):
-    super().__init__(name, age)
-    self.type = 'Cat'
+    pet_class.__init__(self, name, age)
+    self.type = "Cat"
 def cat_speak(self):
     print("meow")
-def cow_init(self):
-    self.type = 'Cow'
-def cow_speak(self):
-    print("moo")
 cat_class = type("cat_class", (pet_class, ), {"__init__": cat_init, "cat_speak": cat_speak})
-new_cat = cat_class('Catone', 12)
+new_cat = cat_class("Catone", 18)
 new_cat.cat_speak()
-"""
+new_cat.print_type()
+new_cat.print_name()
