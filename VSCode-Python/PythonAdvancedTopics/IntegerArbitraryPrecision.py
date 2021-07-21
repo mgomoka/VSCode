@@ -12,12 +12,16 @@ figsize(15, 5)
 import numpy as np
 import pandas as pd
 
+# Here We Consider A List Of Integers Going From 2^0 - 2^159, 
+# And We Use 'sys.getsizeof' To Inspect How Many Bytes Are Actually 
+# Used To Store The Integer:
 import sys
 int_sizes = {}
 for i in range(160):
     int_sizes[i] = sys.getsizeof(2 ** i)
 int_sizes = pd.Series(int_sizes)
 
+# Plotting The Results:
 ax = int_sizes.plot(ylim = [0, 60])
 ax.set_ylabel('Number Of Bytes')
 ax.set_xlabel('Integer (Log Scale)')

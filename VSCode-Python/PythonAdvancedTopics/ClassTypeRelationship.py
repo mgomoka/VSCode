@@ -45,6 +45,8 @@ print(zeb.get_dogage())
 print(ember.get_dogname())
 print(ember.get_dogage())
 
+
+
 # Create 'Pet' Class That 'Cat' And 'Cow' Inherit From
 def pet_init(self, name, age):
     self.name = name
@@ -57,6 +59,7 @@ def print_age(self):
 def print_type(self):
     print(self.type)
 pet_class = type("pet_class", (), {"__init__": pet_init, "print_name": print_name, "print_age": print_age,"print_type": print_type})
+
 new_pet = pet_class("Petone", 18)
 
 def cat_init(self, name, age):
@@ -65,9 +68,24 @@ def cat_init(self, name, age):
 def cat_speak(self):
     print("meow")
 cat_class = type("cat_class", (pet_class, ), {"__init__": cat_init, "cat_speak": cat_speak})
+
 new_cat = cat_class("Catone", 18)
 print("\n", "\n")
-new_cat.cat_speak()
-new_cat.print_type()
 new_cat.print_name()
 new_cat.print_age()
+new_cat.print_type()
+new_cat.cat_speak()
+
+def cow_init(self, name, age):
+    pet_class.__init__(self, name, age)
+    self.type = "Cow"
+def cow_speak(self):
+    print("moo")
+cow_class = type("cow_class", (pet_class, ), {"__init__": cow_init, "cow_speak": cow_speak})
+
+new_cow = cow_class("Cowone", 20)
+print()
+new_cow.print_name()
+new_cow.print_age()
+new_cow.print_type()
+new_cow.cow_speak()
