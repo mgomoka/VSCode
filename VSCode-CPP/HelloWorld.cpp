@@ -13,7 +13,7 @@ int main() {
     // 'std::cout' prints the content inside the quotation marks.
     // It must be followed by '<<' followed by the format string.
     // In our example, "Hello World!" is the format string.
-    std::cout << "Hello World!"; // ';' is used to indicate the 
+    std::cout << "Hello World!\n"; // ';' is used to indicate the 
                                  // end of a statement.
     // The 'return 0;' statement is the "Exit status" of the program.
     // In simple terms, the program ends with this statement.

@@ -9,5 +9,6 @@ public class Add {
         double secondNumber = sc.nextDouble();
         double total = firstNumber + secondNumber;
         System.out.println("The Total Equals: " + total);
+        sc.close();
     }
 }
