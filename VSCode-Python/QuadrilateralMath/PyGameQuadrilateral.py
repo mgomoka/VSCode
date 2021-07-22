@@ -116,7 +116,7 @@ while True:
     renderGameNameDisplayTextE = myFont.render(GameNameDisplayTextE, True, ORANGE)
     screen.blit(renderGameNameDisplayTextE, [95, 10])
 
-    
+
 
     pg.display.update()
     clock.tick(60)
