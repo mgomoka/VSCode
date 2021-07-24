@@ -1,5 +1,10 @@
 {
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "VSCode-Java/CourseraAlgorithmsPart1/algs4.jar"
+    ]
 }
