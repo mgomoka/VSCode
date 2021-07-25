@@ -78,6 +78,7 @@ square_class = type("square_class", (quadrilateral_class, ), {"__init__": square
 
 
 
+"""
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BWHITE = (245, 245, 220)
@@ -120,8 +121,8 @@ while True:
 
     pg.display.update()
     clock.tick(60)
-
 """
+
 while True:
     print("1. Create New Shape")
     print("2. Quit Program")
@@ -279,4 +280,3 @@ while True:
             break
     elif mainmenuinput == '2':
         break
-"""
