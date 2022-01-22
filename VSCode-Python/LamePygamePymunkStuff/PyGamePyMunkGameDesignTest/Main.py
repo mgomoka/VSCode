@@ -36,7 +36,7 @@ while True:
     if gameLEVEL == 0:
         myGame.drawGameScreen(mysize, myDisplay, 'BEIGE')
         myGame.blitSkyImage(mysize, myDisplay)
-        # myGame.drawLoadScreen(mysize, myDisplay)
+        myGame.drawLoadScreen(mysize, myDisplay)
     
     mysize = (pg.display.get_surface().get_width(), pg.display.get_surface().get_height())
     myDisplay.setScreenSize(mysize)
