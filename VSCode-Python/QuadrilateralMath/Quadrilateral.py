@@ -74,11 +74,11 @@ square_class = type("square_class", (quadrilateral_class, ), {"__init__": square
 
 
 while True:
-    print("1. Create New Shape")
+    print("\n1. Create New Shape")
     print("2. Quit Program")
     mainmenuinput = input("Please Enter Choice ")
     if mainmenuinput == '1':
-        print("1. Create General Quadrilateral")
+        print("\n1. Create General Quadrilateral")
         print("2. Create Trapezoid")
         print("3. Create Isosceles Trapezoid")
         print("4. Create Parallelogram")
@@ -89,7 +89,7 @@ while True:
         print("9. Quit Program")
         newshapemenuinput = input("Please Enter Choice ")
         if newshapemenuinput == '1':
-            sideone = float(input("Enter First Side "))
+            sideone = float(input("\nEnter First Side "))
             sidetwo = float(input("Enter Second Side "))
             sidethree = float(input("Enter Third Side "))
             sidefour = float(input("Enter Fourth Side "))
@@ -112,7 +112,7 @@ while True:
             elif quadmenuinput == '4':
                 break
         elif newshapemenuinput == '2':
-            sideone = float(input("Enter First Side "))
+            sideone = float(input("\nEnter First Side "))
             sidetwo = float(input("Enter Second Side "))
             sidethree = float(input("Enter Third Side "))
             sidefour = float(input("Enter Fourth Side "))
@@ -135,7 +135,7 @@ while True:
             elif trapezoidmenuinput == '4':
                 break
         elif newshapemenuinput == '3':
-            sidetop = float(input("Enter Top Side "))
+            sidetop = float(input("\nEnter Top Side "))
             sidebottom = float(input("Enter Bottom Side "))
             sideleftright = float(input("Enter Left/Right Side "))
             angletop = float(input("Enter Top Angle "))
@@ -155,7 +155,7 @@ while True:
             elif itrapezoidmenuinput == '4':
                 break
         elif newshapemenuinput == '4':
-            sidetopbottom = float(input("Enter Top/Bottom Side "))
+            sidetopbottom = float(input("\nEnter Top/Bottom Side "))
             sideleftright = float(input("Enter Left/Right Side ")) 
             angleTRBL = float(input("Enter Top Right/Bottom Left Angle "))
             angleTLBR = float(input("Enter Top Left/Bottom Right Angle "))
@@ -174,7 +174,7 @@ while True:
             elif parallelogrammenuinput == '4':
                 break
         elif newshapemenuinput == '5':
-            sidetopbottom = float(input("Enter Top/Bottom Side "))
+            sidetopbottom = float(input("\nEnter Top/Bottom Side "))
             sideleftright = float(input("Enter Left/Right Side ")) 
             rectangletemp = rectangle_class(sidetopbottom, sideleftright)
             print("1. Find Perimeter")
@@ -191,7 +191,7 @@ while True:
             elif rectanglemenuinput == '4':
                 break
         elif newshapemenuinput == '6':
-            sides = float(input("Enter Sides "))
+            sides = float(input("\nEnter Sides "))
             angletopbottom = float(input("Enter Top/Bottom Angle ")) 
             angleleftright = float(input("Enter Left/Right Angle ")) 
             rhombustemp = rhombus_class(sides, angletopbottom, angleleftright)
@@ -209,7 +209,7 @@ while True:
             elif rhombusmenuinput == '4':
                 break
         elif newshapemenuinput == '7':
-            sides = float(input("Enter Sides "))
+            sides = float(input("\nEnter Sides "))
             squaretemp = square_class(sides)
             print("1. Find Perimeter")
             print("2. Find Area")

@@ -9,7 +9,7 @@ def findRvalue(xArray, yArray):
     rValue = 0
     for x in range(len(xArray)):
         rValue += ((((xArray[x])-(np.mean(xArray))) / (np.std(xArray))) * (((yArray[x])-(np.mean(yArray))) / (np.std(yArray))))
-    rValue /= ((int(len(xArray)))-1)
+    rValue /= (int(len(xArray)))
     print(int(len(xArray)))
     return rValue
 
